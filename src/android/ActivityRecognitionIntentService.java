@@ -18,20 +18,20 @@ public class ActivityRecognitionIntentService extends IntentService
 	
 	private String ConvertActivityCodeToString(DetectedActivity Activity)
 	{
-		if(Activity.getType() === DetectedActivity.IN_VEHICLE){
+		if(Activity.getType() == DetectedActivity.IN_VEHICLE){
 			return "In Vechicle";
-		}else if(Activity.getType() === DetectedActivity.ON_BICYCLE){
+		}else if(Activity.getType() == DetectedActivity.ON_BICYCLE){
 			return "On Bicycle";
-		}else if(Activity.getType() === DetectedActivity.ON_FOOT){
-			return "On Bicycle";
-		}else if(Activity.getType() === DetectedActivity.RUNNING){
-			return "On Bicycle";
-		}else if(Activity.getType() === DetectedActivity.STILL){
-			return "On Bicycle";
-		}else if(Activity.getType() === DetectedActivity.TILTING){
-			return "On Bicycle";
-		}else if(Activity.getType() === DetectedActivity.WALKING ){
-			return "On Bicycle";
+		}else if(Activity.getType() == DetectedActivity.ON_FOOT){
+			return "By Foot";
+		}else if(Activity.getType() == DetectedActivity.RUNNING){
+			return "Is Running";
+		}else if(Activity.getType() == DetectedActivity.STILL){
+			return "Is Still";
+		}else if(Activity.getType() == DetectedActivity.TILTING){
+			return "Is Tilting";
+		}else if(Activity.getType() == DetectedActivity.WALKING ){
+			return "Is walking";
 		}else{
 			return "Can Not Recognize";
 		}
